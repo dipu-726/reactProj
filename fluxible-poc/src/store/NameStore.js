@@ -12,14 +12,21 @@ module.exports = createStore({
     },
 
     populateList: function(payload){
-        this.name.push(payload);
-        this.emitChange();
+       if(payload)
+       {
+            this.name.push(payload);
+       }
+       this.emitChange();
     },
 
     updateCurrentName: function(payload){
-        this.currentName = payload;
-        this.emitChange();
+       if(payload)
+       {
+            this.currentName = payload;
+       }
+       this.emitChange();
     },
+    
     dehydrate: function(){
         return {
             name: this.name,
