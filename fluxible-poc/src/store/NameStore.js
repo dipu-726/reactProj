@@ -3,8 +3,8 @@ import {createStore} from "fluxible/addons"
 module.exports = createStore({
     storeName: "NameStore",
     handlers: {
-        'CREATE_NEW_NAME': '_createName',
-        'UPDATE_NAME': '_updateName'   
+        'CREATE_AND_APPEND': 'populateList',
+        'UPDATE_CURRENT_NAME': 'updateCurrentName',
     },
     initialize: function(){
         this.name=[];
@@ -18,7 +18,6 @@ module.exports = createStore({
        }
        this.emitChange();
     },
-
     updateCurrentName: function(payload){
        if(payload)
        {
@@ -34,14 +33,12 @@ module.exports = createStore({
     getListOfNames: function(){
         return this.name;
     },
-    
     dehydrate: function(){
         return {
             name: this.name,
             currentName: this.currentName
         }
     },
-
     rehydrate: function(state){
         this.name = state.name;
         this.currentName = state.currentName;
