@@ -1,5 +1,8 @@
 module.exports = function(context,payload,done){
-    context.dispatch("CREATE_NEW_NAME",payload.text);
-    context.dispatch("UPDATE_NAME",payload.text);
+    
+    console.log("Inside action ! ");
+
+    context.dispatch("CREATE_NEW_NAME",payload);
+    context.dispatch("UPDATE_NAME",payload);
     done();
 }

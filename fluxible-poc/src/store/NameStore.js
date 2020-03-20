@@ -26,6 +26,14 @@ module.exports = createStore({
        }
        this.emitChange();
     },
+
+    getCurrentName: function(){
+        return this.currentName;
+    },
+    
+    getListOfNames: function(){
+        return this.name;
+    },
     
     dehydrate: function(){
         return {
