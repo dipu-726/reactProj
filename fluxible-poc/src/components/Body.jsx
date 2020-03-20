@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import AddName from "./AddName";
-import NameStore from "../store/NameStore";
+
+
+var NameStore = require('../store/NameStore');
 
 class Body extends Component{
+    // static contextTypes = {
+    //     getStore: React.PropTypes.func.isRequired
+    // }
+
     constructor(props)
     {
         super(props);

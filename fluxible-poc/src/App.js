@@ -1,13 +1,12 @@
-import React from 'react';
-import './App.css';
-import Application from './components/Application';
+var Fluxible = require("fluxible");
+var Application = require("./components/Application");
 
-function App() {
-  return (
-    <div className="App">
-        <Application />
-    </div>
-  );
-}
+var NameStore = require("./store/NameStore");
 
-export default App;
+var App = new Fluxible({
+  component : Application
+});
+
+App.registerStore(NameStore);
+
+module.exports = App;

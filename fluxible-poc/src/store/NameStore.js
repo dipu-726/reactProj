@@ -1,6 +1,6 @@
-import {createStore} from "fluxible/addons"
+var createStore = require('fluxible/addons/createStore');
 
-module.exports = createStore({
+let NameStore = createStore({
     storeName: "NameStore",
     handlers: {
         'CREATE_AND_APPEND': 'populateList',
@@ -44,3 +44,5 @@ module.exports = createStore({
         this.currentName = state.currentName;
     }
 });
+
+export default NameStore;
