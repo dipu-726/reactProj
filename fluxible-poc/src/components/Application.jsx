@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import "../App.css";
 
 class Application extends Component{
+    
     render()
     {
         return(
@@ -16,4 +17,5 @@ class Application extends Component{
         )
     }    
 }
+
 export default Application;

@@ -1,7 +1,10 @@
+import NameStore from "./store/NameStore";
+import Application from "./components/Application";
 var Fluxible = require("fluxible");
-var Application = require("./components/Application");
+// var Application = require("./components/Application");
 
-var NameStore = require("./store/NameStore");
+
+// var NameStore = require("./store/NameStore");
 
 var App = new Fluxible({
   component : Application
@@ -9,4 +12,6 @@ var App = new Fluxible({
 
 App.registerStore(NameStore);
 
-module.exports = App;
+// module.exports = App;
+
+export default App;

@@ -1,4 +1,4 @@
-var createStore = require('fluxible/addons/createStore');
+var createStore = require('fluxible/addons').createStore;
 
 let NameStore = createStore({
     storeName: "NameStore",
@@ -45,4 +45,4 @@ let NameStore = createStore({
     }
 });
 
-export default NameStore;
+module.exports = NameStore;
