@@ -1,0 +1,129 @@
+.u-card-yellow{
+    height: 180px;
+    width: 100%;
+    border-radius: 14.5px;
+    background-color: #FFF04B;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 25px;
+    color:rgb(43, 7, 102);
+}
+
+.u-card-blue{
+    height: 180px;
+    width: 100%;
+    border-radius: 14.5px;
+    background-color: rgb(43, 7, 102);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 25px;
+    color: whitesmoke;
+}
+
+.u-block-center{
+    margin: auto;
+}
+
+.u-text-center{
+    text-align: center;
+}
+
+.u-question{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.u-flex{
+    display: flex;
+
+    &--flexStart{
+        justify-content: flex-start;
+    }
+
+    &--spaceEvenly{
+        justify-content: space-evenly;
+    }
+}
+
+.u-spacer{
+
+    &--thin-left{
+        margin-left: 10px;
+    }
+
+    &--more-right{
+        margin-right: 15px;
+    }
+
+    &--more-top{
+        margin-top: 15px;
+    }
+
+    &--more-bottom{
+        margin-bottom: 15px;
+    }
+
+    &--thin-top{
+        margin-top:10px;
+    }
+
+    &--thin-right{
+        margin-right:10px;
+    }
+
+    &--large-top{
+        margin-top: 22px;
+    }
+}
+
+.u-cushion{
+
+    &--left{
+        padding-left: 10px;
+    }
+
+    &--right{
+        padding-right: 10px;
+    }
+
+    &--more-top{
+        padding-top: 15px;
+    }
+
+    &--more-bottom{
+        padding-bottom: 15px;
+    }
+}
+.u-btn{
+    width: 30%;
+    height: 30px;
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.u-bg-red{
+    background-color: rgb(213,73,55);
+    color: white;
+    font-size: 16px;
+}
+
+.u-bg-wheat{
+    background-color: white;
+    color: navy
+}
+.u-bg-light-blue{
+    background-color:rgb(76,143,251);
+    color: white;
+    font-size: 16px;
+}
+
+.u-img
+{
+    border-radius: 50%;
+}
