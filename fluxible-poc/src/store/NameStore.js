@@ -1,4 +1,5 @@
-var createStore = require('fluxible/addons').createStore;
+
+import {createStore} from "fluxible/addons";
 
 let NameStore = createStore({
     storeName: "NameStore",

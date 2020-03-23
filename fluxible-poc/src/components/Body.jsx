@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AddName from "./AddName";
-
+import {connectToStores} from "fluxible-addons-react";
 
 var NameStore = require('../store/NameStore');
 

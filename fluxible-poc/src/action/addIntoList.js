@@ -6,4 +6,4 @@ let addIntoList = function(context,payload,done){
     context.dispatch("UPDATE_CURRENT_NAME",payload);
     done();
 }
-export default addIntoList;
+export default addIntoList;  
