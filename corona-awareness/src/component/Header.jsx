@@ -6,7 +6,7 @@ import needHelp from "../images/needHelp.png";
 const Header = () =>{
     return(
         <div className="u-spacer--x-large-bottom">
-            <div className="u-flex u-flex--spaceBetween u-spacer--thin-right head-nav">
+            <div className="u-flex u-flex--spaceBetween u-spacer--thin-right head-nav u-spacer--large-bottom">
                 <img className="u-header-who u-spacer--large-bottom" src={who} alt="" />
                 <img className="u-header-stayHome u-spacer--large-bottom" src={stayHome} alt="" />
             </div> 

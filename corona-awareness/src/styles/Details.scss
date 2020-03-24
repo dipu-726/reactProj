@@ -1,0 +1,55 @@
+.c-details-card{
+    height: 160px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.profile-img{
+    height: 100px;
+    width: 100px;
+}
+
+.user-details{
+    color: #160047;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.user-age-input{
+    height: 25px;
+    width: 50px;
+    border: none;
+    margin-left: 20px;
+    background-color: rgba(212, 212, 212,0.3);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+}
+
+.user-gender-input{
+    height: 20px;
+    width: 15px;
+    margin: 0px;
+    margin-top: 4px;
+    margin-left: 8px;
+
+}
+
+p{
+    margin: 0px;
+    font-size: 18px;
+}
+
+.c-details-gender
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-left: 5px;
+}
