@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Card from './Card';
 import "../styles/Application.scss";
 import "../styles/utilities.scss";
+import Banner from './Banner';
+import Header from './Header';
 
 class Application extends Component{
 
@@ -66,6 +68,8 @@ class Application extends Component{
     render(){
         return(
             <div className="application u-block-center u-text-center">
+            <Header />
+            <Banner />
             {console.log("nested")}
                {this.rednerAllSymptoms()}
             </div>
