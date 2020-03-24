@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Details from './Details';
 import GetStarted from './GetStarted';
+import RenderDetailsORQuestions from './RenderDetailsORQuestions';
 class Body extends Component{
 
     constructor(props)
@@ -20,7 +20,7 @@ class Body extends Component{
     render(){
         return(
           <div>
-                {this.state.showDetails ? <GetStarted handleStartClick = {this.handleStartClick}/> : <Details />}
+                {this.state.showDetails ? <GetStarted handleStartClick = {this.handleStartClick}/> : <RenderDetailsORQuestions />}
           </div>
         )
     }

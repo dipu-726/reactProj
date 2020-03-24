@@ -3,11 +3,15 @@ import '../../styles/Details.scss';
 import profileImg from '../../images/profileImg.jpg';
 import continueImg from '../../images/continue.png';
 
-
 class Details extends Component{
+
+    handleClick = () => {
+        this.props.handleContinueClick();
+    }
+
     render(){
         return(
-           <div className="c-details-card">
+           <div className="c-details-card u-cushion--thin-top">
                 <div className="u-flex u-flex--center">
 
                     <img className='profile-img' src={profileImg} alt='' />
@@ -27,7 +31,7 @@ class Details extends Component{
                         </div>
                     </div>
                 </div>
-                <img height="40px" width="37%" src={continueImg} alt="" />
+                <img height="40px" width="37%" src={continueImg} alt="" onClick={this.handleClick}/>
            </div>
         )
     }    
