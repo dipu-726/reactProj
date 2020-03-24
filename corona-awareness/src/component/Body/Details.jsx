@@ -6,7 +6,26 @@ import continueImg from '../../images/continue.png';
 class Details extends Component{
 
     handleClick = () => {
-        this.props.handleContinueClick();
+        const userInputAge = document.getElementById('user-age').value;
+        if(userInputAge<99 && userInputAge>2){
+            if(this.optionChecked){
+                this.props.handleContinueClick();
+            }
+            else
+            {
+                alert("Please select the gender");
+            }
+        }
+        else
+        {
+            alert("Fill all the feilds correctly :)");
+        }
+    }
+
+    optionChecked = null;
+
+    handleChangeForRadio = (e) =>{
+        this.optionChecked =  e.currentTarget.value;
     }
 
     render(){
@@ -20,9 +39,9 @@ class Details extends Component{
                         <div className="u-flex c-details-gender">
                                 <p>Gender : </p> 
                             <label>Male</label>
-                                    <input className="user-gender-input" type="radio" name="gender" value="M" />
+                                    <input className="user-gender-input" type="radio" name="gender" value="M" onChange={this.handleChangeForRadio} />
                             <label>Female</label>
-                                    <input className="user-gender-input" type="radio" name="gender" value="F" />
+                                    <input className="user-gender-input" type="radio" name="gender" value="F" onChange={this.handleChangeForRadio} />
                         </div> 
 
                         <div className="u-flex c-details-age">
