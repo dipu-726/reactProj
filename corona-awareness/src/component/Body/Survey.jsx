@@ -26,39 +26,39 @@ class Survey extends Component{
             },
             {
                 symptomName: 'Fever',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://www.netclipart.com/pp/m/195-1955892_fever-clipart-tummy-pain-cartoon.png"
             },
             {
                 symptomName: 'Fatigue',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://www.pngitem.com/pimgs/m/117-1177149_fatigue-is-a-common-phenomenon-occurring-because-of.png"
             },
             {
                 symptomName: 'Shortness of Breath',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://thumbs.dreamstime.com/z/shortness-breath-person-breathing-problem-asthma-shortness-breath-person-breathing-problem-asthma-disease-symptom-160462759.jpg"
             },
             {
                 symptomName:'Snuffy Nose',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVhIHwOysxyPCHTSHJaRM-zHiG5wED4Ap-k-7X5A_jNpXj2GI-"
             },
             {
                 symptomName:'Sneezing',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://thumbs.dreamstime.com/b/man-sneezing-ill-fever-sick-influenza-cartoon-flat-illustration-vector-man-sneezing-ill-fever-sick-influenza-cartoon-168091915.jpg"
             },
             {
                 symptomName:'Sore throat',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://st3.depositphotos.com/4297405/16450/v/450/depositphotos_164509284-stock-illustration-illustration-depicts-a-child-character.jpg"
             },
             {
                 symptomName:'Headache',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://t4.ftcdn.net/jpg/02/82/12/99/240_F_282129985_4pPu8qWD4C5eSeQNdrPVQAT4df9ZPGeJ.jpg"
             },
             {
                 symptomName:'Body Aches',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://us.123rf.com/450wm/lcosmo/lcosmo1602/lcosmo160200053/52128786-stock-vector-mascot-person-man-with-back-pain-symptoms-ideal-for-informational-and-institutional-related-to-medic.jpg?ver=6"
             },
             {
                 symptomName:'Diarrhea',
-                imageUrl: "https://i.dlpng.com/static/png/1651633-question-1-cough-png-275_275_preview.png"
+                imageUrl: "https://cdn4.vectorstock.com/i/1000x1000/49/13/boy-is-diarrhea-front-toilet-men-vector-25564913.jpg"
             }
     ];
 

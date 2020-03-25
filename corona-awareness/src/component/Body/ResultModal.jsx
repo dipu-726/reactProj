@@ -3,7 +3,7 @@ import onlineDoc from "../../images/onlineDoc.webp";
 class ResultModal extends Component{
     render(){
         return(
-           <div>
+           <div className="u-xx-large-margin">
                 <div className = "u-result-card u-text-center u-cushion--more-top u-cushion--more-bottom">
                      <p className="u-user u-spacer--x-thin-bottom">Dear User,</p>
                      <p className="u-message u-spacer--thin-left u-spacer--thin-right u-spacer--more-bottom">{this.props.message}</p>   
