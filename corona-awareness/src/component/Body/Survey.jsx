@@ -164,7 +164,7 @@ class Survey extends Component{
                    if(num1 >5){ 
                     this.setState({
                         message : "Oopss !! It seems like your are prone to CVOID-19",
-                        suggestion: "Observe your Symptoms, Consult Doctor is possible"
+                        suggestion: "Observe your Symptoms, Consult Doctor as soons as possible"
                     })
                    }
                    else{
@@ -250,7 +250,7 @@ class Survey extends Component{
                     <ResultModal message={this.state.message} suggestion={this.state.suggestion} /> :
                     <div>
                         {this.rednerAllSymptoms()}
-                        <button className="u-btn" onClick={this.handleSubmit}>Submit</button>
+                        <button className="u-btn u-btn-submit u-spacer--thin-top" onClick={this.handleSubmit}>SUBMIT</button>
                     </div>
                 } 
             </div>
