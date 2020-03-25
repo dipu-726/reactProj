@@ -241,3 +241,36 @@
     width: 140px;
     color: white;
 }
+
+
+.u-footer
+{
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.u-footer-helpline{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(255, 255, 0,0.9);
+    letter-spacing: 1.3px;
+}
+.u-footer-helpUs{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1.3px;
+}
+
+.u-footer-self-desc{
+    font-size: 15px;
+    color: white;
+}
+
+.u-xx-large-margin{
+    margin-bottom: 120px;
+}

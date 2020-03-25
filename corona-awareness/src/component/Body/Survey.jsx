@@ -250,7 +250,7 @@ class Survey extends Component{
                     <ResultModal message={this.state.message} suggestion={this.state.suggestion} /> :
                     <div>
                         {this.rednerAllSymptoms()}
-                        <button className="u-btn u-btn-submit u-spacer--thin-top" onClick={this.handleSubmit}>SUBMIT</button>
+                        <button className="u-xx-large-margin u-btn u-btn-submit u-spacer--thin-top" onClick={this.handleSubmit}>SUBMIT</button>
                     </div>
                 } 
             </div>
