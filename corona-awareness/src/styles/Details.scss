@@ -4,12 +4,15 @@
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-image: url('../images/detailsCard.jpg');
+    background-size: 230px;
 
 }
 
 .profile-img{
     height: 100px;
     width: 100px;
+    border-radius: 50%;
 }
 
 .user-details{
@@ -28,6 +31,7 @@
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 2px;
+    background: transparent;
 }
 
 .user-gender-input{
