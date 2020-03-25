@@ -8,7 +8,6 @@ class Survey extends Component{
         super(props);
         this.state = {
             showResultModal : false,
-            percentageOfIllness : null,
             message: null,
             suggestion: null
         }
@@ -64,7 +63,6 @@ class Survey extends Component{
     ];
 
     decideClassName = (index)=>{
-        console.log(index);
         if( index%2 === 0)
         {
             return true;
@@ -87,7 +85,6 @@ class Survey extends Component{
 
     symtomSelectedByUser  = (index,optionID) =>{
         this.userInputSymptoms[index] = optionID;
-        console.log("ar",this.userInputSymptoms);
     }
 
     // *********************** calculate options count **************************//
@@ -129,17 +126,12 @@ class Survey extends Component{
     checkEqualityForAll = (num1,num2,num3) =>{
         if(num1 === num2){
             if(num1 === num3)
-            console.log("check for all -> equal");
                 return true;
         }
-        console.log("check for all not-> equal");
-
         return false;
-
     }
 
     checkEqualityForTwo = (num1,num2,num3) =>{
-       console.log("check equality for 2  ");
 
         if(num1 === num2 && num1>num3){
             this.setState({
@@ -165,15 +157,11 @@ class Survey extends Component{
     }
 
     checkForMoreLikelyToHave = (num1,num2,num3) =>{
-       console.log("check equality for 1  ");
-
             if(num1 > num2)
             {
             	if(num1 > num3 )
             	{
                    if(num1 >5){ 
-                       console.log("num 1 is greater ");
-
                     this.setState({
                         message : "Oopss !! It seems like your are prone to CVOID-19",
                         suggestion: "Observe your Symptoms, Consult Doctor is possible"
@@ -191,7 +179,6 @@ class Survey extends Component{
             {
             	if(num2 > num3 )
             	{ 	
-                    console.log("num 2 is greater ");
                     this.setState({
                         message : "You are more likely to have Flu..",
                         suggestion: "Proper Medication is must."
@@ -199,22 +186,17 @@ class Survey extends Component{
             	}
             	else
                 {
-                    console.log("num 3 is greater ");
-
                     this.setState({
                         message : "You have commong Cold !",
                         suggestion: "Take Precautions ! "
                     })
                 }
             }
-            console.log("nothin called ");
-
     }
     
     calResultForUserInput = ()=>{
-        console.log(this.oftenCount);
-       const ifAllAreSame = this.checkEqualityForAll(this.oftenCount,this.somtimesCount,this.rareCount);
-       console.log("check call check qyality for all ",ifAllAreSame);
+
+        const ifAllAreSame = this.checkEqualityForAll(this.oftenCount,this.somtimesCount,this.rareCount);
 
        if(ifAllAreSame){
            this.setState({
@@ -223,8 +205,7 @@ class Survey extends Component{
            return;
         }
         this.checkEqualityForTwo(this.oftenCount,this.somtimesCount,this.rareCount);
-        this.checkForMoreLikelyToHave(this.oftenCount,this.somtimesCount,this.rareCount);
-        
+        this.checkForMoreLikelyToHave(this.oftenCount,this.somtimesCount,this.rareCount);        
     }
 
     // ********************** calcualate result *********************************** //
@@ -246,22 +227,18 @@ class Survey extends Component{
             }
         })
         if(count === 10 )
-            alert('correct');
-        else    
-            alert('incorrect')
-
-            alert(this.state.message);
-            alert(this.state.suggestion);
+        {
             this.setState({
                 showResultModal: true
             })
+        }
+        else    
+            alert('Pls fill all the options ! ')          
     }
 
     render(){
         return(
             <div>
-
-                {console.log("nested")}
                 {
                     this.state.showResultModal ? 
                     <ResultModal message={this.state.message} suggestion={this.state.suggestion} /> :
