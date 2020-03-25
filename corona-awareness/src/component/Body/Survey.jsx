@@ -135,7 +135,7 @@ class Survey extends Component{
 
         if(num1 === num2 && num1>num3){
             this.setState({
-                message : "A little more exposure may put in DANGER !.",
+                message : "A little more exposure may put in DANGER.",
                 suggestion: "Take Precautions ! "
             })
         }
@@ -169,7 +169,7 @@ class Survey extends Component{
                    }
                    else{
                     this.setState({
-                        message : "Seems like U are prone to flu...Observe your Symptoms, ",
+                        message : "Seems like U are prone to flu ! Observe your Symptoms.",
                         suggestion: "Isolation is the best reward you can give to yourself !"
                     })
                    }
@@ -180,17 +180,23 @@ class Survey extends Component{
             	if(num2 > num3 )
             	{ 	
                     this.setState({
-                        message : "You are more likely to have Flu..",
+                        message : "You are more likely to have Flu !",
                         suggestion: "Proper Medication is must."
                     })
             	}
             	else
                 {
                     this.setState({
-                        message : "You have commong Cold !",
+                        message : "No worries.. You have common Cold.",
                         suggestion: "Take Precautions ! "
                     })
                 }
+            }
+            else{
+                this.setState({
+                    message : "No worries ! You have common Cold.",
+                    suggestion: "Take Precautions ! "
+                })
             }
     }
     

@@ -80,6 +80,10 @@
         margin-bottom: 10px;
     }
 
+    &--x-thin-bottom{
+        margin-bottom: 3px;
+    }
+
     &--large-bottom{
         margin-bottom: 20px;
     }
@@ -98,6 +102,11 @@
     &--large-top{
         margin-top: 22px;
     }
+
+    &--x-large-top{
+        margin-top: 30px;
+    }
+
 }
 
 .u-cushion{
@@ -110,6 +119,8 @@
         padding-right: 10px;
     }
 
+
+
     &--more-top{
         padding-top: 15px;
     }
@@ -120,6 +131,10 @@
 
     &--more-bottom{
         padding-bottom: 15px;
+    }
+
+    &--x-large-top{
+       padding-top: 24px;
     }
 }
 .u-btn{
@@ -177,4 +192,50 @@
 .u-btn-clicked{
     background-color: black;
     color: white;
+}
+
+.u-result-card{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+  
+}
+
+.u-user{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: 700;
+}
+
+.u-message{
+    font-size: 20px;
+    color: #003466;
+    font-weight: 700;
+}
+.u-suggestion{
+    font-size: 16px;
+    color: #cc0001;
+    font-weight: bold;
+}
+
+.u-marketing-text{
+    font-size: 20px;
+    color: #cc0001;
+    font-weight: bold;
+    
+}
+
+.u-promotion-practo{
+    color: darkorange;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.u-promotion{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
 }
