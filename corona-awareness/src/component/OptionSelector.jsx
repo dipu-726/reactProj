@@ -27,14 +27,28 @@ class OptionSelector extends Component{
     render(){
         return(
             <div className='u-flex u-flex--spaceEvenly u-spacer--large-top u-cushion--left u-cushion--right'>
+                {/* {console.log(typeof(this.props))} */}
                 <OptionButton classname={this.state.buttonClicked===0 ? this.BUTTON_ONCLICK :this.RARE_NOT_CLICKED } 
-                    btnText = "Rare" identifyButtonPressed={this.identifyButtonPressed} btnId={0}
+                    btnText = "Rare" 
+                    identifyButtonPressed={this.identifyButtonPressed} 
+                    btnId={0}
+                    index= {this.props.index}
+                    symtomSelectedByUser = {this.props.symtomSelectedByUser}                    
                 />
+
                 <OptionButton classname={this.state.buttonClicked===1 ? this.BUTTON_ONCLICK :this.SOMETIMES_NOT_CLICKED } 
-                    btnText = "Sometimes" identifyButtonPressed={this.identifyButtonPressed} btnId={1}
+                    btnText = "Sometimes" identifyButtonPressed={this.identifyButtonPressed} 
+                    btnId={1}
+                    index = {this.props.index}
+                    symtomSelectedByUser = {this.props.symtomSelectedByUser}                    
                 />
+
                 <OptionButton classname={this.state.buttonClicked===2 ? this.BUTTON_ONCLICK :this.OFTEN_NOT_ONCLICKED } 
-                    btnText = "Often" identifyButtonPressed={this.identifyButtonPressed} btnId={2}
+                    btnText = "Often" 
+                    identifyButtonPressed={this.identifyButtonPressed} 
+                    btnId={2}
+                    index = {this.props.index}
+                    symtomSelectedByUser = {this.props.symtomSelectedByUser}                    
                 />
         </div>
         )
