@@ -64,7 +64,7 @@ class Survey extends Component{
     render(){
         return(
             <div>
-                <div>Hello from Survey</div>
+
                 {console.log("nested")}
                 {this.rednerAllSymptoms()}
             </div>
