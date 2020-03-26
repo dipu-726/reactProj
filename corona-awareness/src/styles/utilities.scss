@@ -8,6 +8,9 @@
     color:rgb(43, 7, 102);
     background-image: url('../images/yellowbg.jpg');
     background-size: cover;
+    animation: fadeInAnimation ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 }
 
 .u-card-blue{
@@ -20,6 +23,9 @@
     color: whitesmoke;
     background-image: url('../images/bluebg.jpg');
     background-size: cover;
+    animation: fadeInAnimation ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 }
 
 .u-block-center{
@@ -199,8 +205,20 @@
     background-color: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
-  
+    animation: fadeInAnimation ease .8s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 }
+
+ @keyframes fadeInAnimation { 
+    0%{ 
+          opacity: 0; 
+        } 
+    100%{ 
+          opacity: 1; 
+         } 
+ } 
+ 
 
 .u-user{
     font-size: 20px;

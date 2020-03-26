@@ -187,14 +187,14 @@ class Survey extends Component{
             	else
                 {
                     this.setState({
-                        message : "No worries.. You have common Cold.",
+                        message : "No worries ! You may have common Cold.",
                         suggestion: "Take Precautions ! "
                     })
                 }
             }
             else{
                 this.setState({
-                    message : "No worries ! You have common Cold.",
+                    message : "No worries ! You may have common Cold.",
                     suggestion: "Take Precautions ! "
                 })
             }
