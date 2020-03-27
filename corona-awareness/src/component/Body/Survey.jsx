@@ -173,6 +173,12 @@ class Survey extends Component{
                         suggestion: "Isolation is the best reward you can give to yourself !"
                     })
                    }
+                } 
+                else{
+                    this.setState({
+                        message : "No worries ! You may have common Cold.",
+                        suggestion: "Take Precautions ! "
+                    })
                 }
             }
             else if(num2 > num1)
