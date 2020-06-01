@@ -10,11 +10,11 @@ const iternate_Actions_And_Return_Object = (arr) => {
             //     campaign_id : item.campaign_id,
             //     question_id : item.question_id 
             // }
-            const cID_and_qID = {
-               [item.campaign_id] : item.question_id
-            }
+            // const cID_and_qID = {
+            //    [item.campaign_id] : item.question_id
+            // }
         //    console.log(newObj);
-            newArr.push(cID_and_qID);
+            newArr.push( item.question_id);
         }
     })
     // console.log(newArr);
